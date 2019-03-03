@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="calculator-title">
+                <h1>Calculator</h1>
+                <p style="font-family:Noteworthy">Designed and Coded by Rbertille</p>
+                </div>
+                <form class="calculator">
+                    <div class="result"><input type="text" id="results" name="results" required></div>
+                    <div id="results" class="display-zero"></div>
+                    <!--<div class="display-zero">
+                        <div id="results" class="display-zero">0</div>
+                        <div id="results" class="display-zero"><input type="text" id="results" name="results" required></div>
+                    </div>-->
+                        <div class="button-calculator">
+                            <button type="button" id="clear" class="ac">AC</button>
+                            <button type="button" id="buttons" class="soustrandplus">+/-</button>
+                            <button type="button" id="buttons" class="pourcentage">%</button>
+                            <button type="button" id="buttons" class="division" style="background-color:#FF8C00">/</button>
+                        </div>
+                        <div class="calculator-button">
+                            <div class="number-calculator">
+                                <button type="button" id="buttons" class="seven">7</button>
+                                <button type="button" id="buttons" class="eight">8</button>
+                                <button type="button" id="buttons" class="nine">9</button>
+                                <button type="button" id="buttons" class="multiplication" style="background-color:#FF8C00">X</button>
+                            </div>
+                            <div class="num-calculator">
+                                <button type="button" id="buttons" class="four">4</button>
+                                <button type="button" id="buttons" class="five">5</button>
+                                <button type="button" id="buttons"  class="six">6</button>
+                                <button type="button" id="buttons" class="soustraction" style="background-color:#FF8C00">-</button>
+                            </div>
+                            <div class="num-calculator">
+                                <button type="button" id="buttons" class="one">1</button>
+                                <button type="button" id="buttons" class="two" class="two">2</button>
+                                <button type="button" id="buttons" class="three">3</button>
+                                <button type="button" id="buttons" class="plus" style="background-color:#FF8C00">+</button>
+                            </div>
+                            <div class="num-calculator">
+                                <button type="button" id="buttons" class="zero">0</button>
+                                <button type="button" id="buttons" class="decimal">.</button>
+                                <button type="button" id="buttons" class="equal" style="background-color:#FF8C00">=</button>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--- JS -->
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

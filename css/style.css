@@ -49,11 +49,10 @@ h1, p {
 
     input {
         border: 2px solid #000;
-        width:294px;
         height:90px;
         margin:0 auto; 
-        background-color:#000; 
-        color:#fff;
+        background-color:#000;
+        
     }
 
     /*.display-calculator {
@@ -465,16 +464,38 @@ h1, p {
         color:#fff;
     
     }*/
-    input {
+
+    /*input {
         border: 2px solid #000;
         width:280px;
         height:90px;
         margin:0 auto;
-        background-color:#000; 
+        background-color:#000;
+        /*color:#fff;
+        
+    }*/
+
+    /*.result {
+        border: 2px solid #000;
+        width:280px;
+        height:90px;
+        margin:0 auto;
+        background-color:#000;
         
     }
 
-   .display-zero {
+    .result #results {
+        color:#fff;
+    }*/
+
+
+    
+    .display-zero {
+        border: 2px solid #000;
+        width:280px;
+        height:90px;
+        margin:0 auto;
+        background-color:#000;
         float:right;
         margin-right:7px;
         font-size:60px; 
@@ -533,6 +554,7 @@ h1, p {
         width:145px;
         height:72px;
         margin-left:-3px;
+        
         
     }
 

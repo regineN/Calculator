@@ -6,15 +6,30 @@
 
 //clicking on each button
 //get value of button
+//calculate answers
 //clear the answer field
-window.onload = function() {
-    var result = document.getElementById("results");
-    var clear = document.getElementById("clear");
-    var button = document.getElementById("buttons");
 
-    for(var i = 0; i <= button.length; i++) {
-        button[i].click();
-    }
+
+
+//clicking on each button
+window.onload = function() {
+  var butt = document.getElementById('button');
+  var result = document.getElementById('results');
+  var clear = document.getElementById("ac");
+
+    document.addEventListener('click', function(event){
+      if(event.target.nodeName == "BUTTON") {
+        var value = event.target.innerHTML;
+
+        if(value === '=') {
+          results = parseFloat(results.innerHTML);
+        }else {
+        results.innerHTML += value;
+        }
+      }
+    }, false);
 };
+
+
 
 

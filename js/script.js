@@ -12,24 +12,46 @@
 
 
 //clicking on each button
-window.onload = function() {
-  var butt = document.getElementById('button');
-  var result = document.getElementById('results');
-  var clear = document.getElementById("ac");
+/*window.onload = function() {
+  var butt = document.querySelector('#button');
+  var result = document.querySelector('#results');
+  
 
     document.addEventListener('click', function(event){
       if(event.target.nodeName == "BUTTON") {
         var value = event.target.innerHTML;
 
         if(value === '=') {
-          results = parseFloat(results.innerHTML);
+
+          results.innerHTML = parseInt(results.innerHTML);
         }else {
         results.innerHTML += value;
         }
       }
     }, false);
-};
+};*/
+
+function Calculate() {
+  var a = document.querySelector('#button').value;
+  var b = document.querySelector('#results').value;
+  var operation = document.querySelectot('#operation').value;
+  var calculate;
+
+  document.addEventListener('click', function(event){
+    if(event.target.nodeName == "BUTTON") {
+      var value = event.target.innerHTML;
 
 
+  if(operation == "+"){
+    calculate = a + b;
+  } else if(operation == "-") {
+    calculate = a - b;
+  } else if(operation == "/") {
+    calculate = a / b;
+  }else if(operation == "x") {
+    calculate = a * b;
+  }
 
+  console.log(calculate);
+}
 

@@ -33,7 +33,7 @@
                         <div id="results" class="display-zero"><input type="text" id="results" name="results" required></div>-->
                     <!---<p id="results"></p>-->
                     </div>
-                        <div class="button-calculator">
+                        <div class="button-calculator" id="operation">
                             <button type="button" class="ac" value='ac' id='ac'>AC</button>
                             <button type="button" class="soustrandplus" value='+/-'>+/-</button>
                             <button type="button" class="pourcentage" value='%'>%</button>
@@ -61,7 +61,7 @@
                             <div class="num-calculator">
                                 <button type="button" class="zero"  value='0'>0</button>
                                 <button type="button" class="decimal"  value='.'>.</button>
-                                <button type="button" class="equal" style="background-color:#FF8C00">=</button>
+                                <button type="button" class="equal" style="background-color:#FF8C00" onclick="Calculate()">=</button>
                             </div>
                         </div>
                 </form>
